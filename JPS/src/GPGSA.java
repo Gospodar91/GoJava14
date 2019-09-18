@@ -8,17 +8,17 @@ public class GPGSA {
         String substring=string.substring(1,6);
         System.out.println("Source:"+substring);
         String words[]=string.split(",",70);
-        String str=words[1];
-        int a=Integer.parseInt(words[2]);
-        int b=Integer.parseInt(words[3]);
-        int c=Integer.parseInt(words[4]);
-        int d=Integer.parseInt(words[5]);
-        int e=Integer.parseInt(words[6]);
-        System.out.println(" Receiver mode: A = automatic; M = manual:"+str);
-        System.out.println(" Fix mode: 1 = fix not available; 2 = 2D; 3 = 3D:"+a);
-        System.out.println(" ID of each satellite used in the fix (unused are 00):"+b);
-        System.out.println(" Percent DOP value :"+c);
-        System.out.println(" Horizontal DOP value :"+d);
-        System.out.println(" Vertical DOP value :"+e);
+        String receive=words[1];
+        int fixmode=Integer.parseInt(words[2]);
+        int satelliteid=Integer.parseInt(words[3]);
+        int dopvalue=Integer.parseInt(words[4]);
+        int horvalue=Integer.parseInt(words[5]);
+        int vertvalue=Integer.parseInt(words[6]);
+        System.out.println(" Receiver mode: A = automatic; M = manual:"+receive);
+        System.out.println(" Fix mode: 1 = fix not available; 2 = 2D; 3 = 3D:"+fixmode);
+        System.out.println(" ID of each satellite used in the fix (unused are 00):"+satelliteid);
+        System.out.println(" Percent DOP value :"+dopvalue);
+        System.out.println(" Horizontal DOP value :"+horvalue);
+        System.out.println(" Vertical DOP value :"+vertvalue);
     }
 }

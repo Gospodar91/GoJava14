@@ -16,22 +16,20 @@ public class GPGGA {
                 +dst[2]+"\t"+"minutes"+"\t"+dst[4]+""+dst[5]
                 +""+dst[7]+dst[8]+dst[9]+"\t"+"seconds UTC");
         float time=Float.parseFloat(words[1]);
-        double d01 = Double.parseDouble(words[2]);
-        double d02 = Double.parseDouble(words[4]);
-        float f = Float.parseFloat(words[7]);
-        float f01 = Float.parseFloat(words[8]);
-        float f02 = Float.parseFloat(words[9]);
-        String str01=words[3];
-        String str02=words[5];
-        String str03=words[6];
-
-
-        System.out.println("Lattitude:"+d01+"\n"+"N=North,S=South"+"\t:"+str01);
-        System.out.println("Longitude:"+d02+"\n"+"E=East;W=West"+"\t:"+str02);
-        System.out.println("Condition: 1=valid;0=not valid"+"\t:"+str03);
-        System.out.println("Number of satellites:"+f);
-        System.out.println("Horizontal Dilution of Precision:"+f01);
-        System.out.println("Level above or below the sea:"+f02+"meters");
+        double lattitude = Double.parseDouble(words[2]);
+        double longitude = Double.parseDouble(words[4]);
+        float satelitenum = Float.parseFloat(words[7]);
+        float hdp = Float.parseFloat(words[8]);
+        float level = Float.parseFloat(words[9]);
+        String northsouth=words[3];
+        String eastwest=words[5];
+        String condition=words[6];
+        System.out.println("Lattitude:"+lattitude+"\n"+"N=North,S=South"+"\t:"+northsouth);
+        System.out.println("Longitude:"+longitude+"\n"+"E=East;W=West"+"\t:"+eastwest);
+        System.out.println("Condition: 1=valid;0=not valid"+"\t:"+condition);
+        System.out.println("Number of satellites:"+satelitenum);
+        System.out.println("Horizontal Dilution of Precision:"+hdp);
+        System.out.println("Level above or below the sea:"+level+"meters");
 
     }
 }
