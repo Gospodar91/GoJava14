@@ -1,15 +1,12 @@
 import java.util.Scanner;
 
-public class Testcalc3 {
-    public  void Count3() {
+public class Testcalc3  {
+    public  void Count3(int num) {
         int a;
-        System.out.println("Пожалуйста,введите число:");
-        Scanner scanner=new Scanner(System.in);
-        a=scanner.nextInt();
-        System.out.println("Ваш результат:");
+        a=num;
+        System.out.print("Ваш шестнадцатиричный код:");
         String[] b = new String[4];
         if (a <= 9) {
-
             System.out.println(a);
         } else  if (a>9){
             for (int i = 0; i < b.length; i++) {

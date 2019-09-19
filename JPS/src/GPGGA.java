@@ -16,8 +16,8 @@ public class GPGGA {
                 +dst[2]+"\t"+"minutes"+"\t"+dst[4]+""+dst[5]
                 +""+dst[7]+dst[8]+dst[9]+"\t"+"seconds UTC");
         float time=Float.parseFloat(words[1]);
-        double lattitude = Double.parseDouble(words[2]);
-        double longitude = Double.parseDouble(words[4]);
+        float lattitude = Float.parseFloat(words[2]);
+        float longitude = Float.parseFloat(words[4]);
         float satelitenum = Float.parseFloat(words[7]);
         float hdp = Float.parseFloat(words[8]);
         float level = Float.parseFloat(words[9]);

@@ -16,8 +16,8 @@ public class PACCEI {
                 + "" + dst[7] + dst[8] + dst[9] + "\t" + "seconds UTC");
         String words[]=string.split(",",70);
         float time=Float.parseFloat(words[1]);
-        double lattitude = Double.parseDouble(words[2]);
-        double longitude = Double.parseDouble(words[4]);
+        float lattitude = Float.parseFloat(words[2]);
+        float longitude = Float.parseFloat(words[4]);
         float velocity=Float.parseFloat(words[6]);
         float acceleration=Float.parseFloat(words[7]);
         String ns=words[3];

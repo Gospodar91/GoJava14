@@ -1,13 +1,11 @@
 import java.util.Scanner;
 
-public class Testcalc2 {
-    public void Cout2() {
+public class Testcalc2  {
+    public void Cout2(int num) {
         int a;
-        int []b=new int[5];
-        System.out.println("Введите число:");
-        Scanner scanner=new Scanner(System.in);
-        a=scanner.nextInt();
-        System.out.println("Ваш результат:");
+        int []b=new int[10];
+       a=num;
+        System.out.print("Восьмиричный код:");
         if (a<=8){
             System.out.println(a);
         }
