@@ -15,9 +15,8 @@ public class Testcalc2  {
             for (int n = 4; n >= 0; n--){
                 System.out.print(b[n]);}
         }
-         if (a==0){
-            System.out.println("0");
-        }
+
+
 
     }
 }

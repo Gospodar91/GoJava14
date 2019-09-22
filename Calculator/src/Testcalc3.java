@@ -32,9 +32,7 @@ public class Testcalc3  {
                 }
             }
         }
-         if (a==0){
-            System.out.println("0");
-        }
+
         for (int n = 3; n >= 0; n--){
             System.out.print(b[n]);}
 
