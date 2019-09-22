@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Testcalc2  {
     public void Cout2(int num) {
         int a;
@@ -17,7 +15,7 @@ public class Testcalc2  {
             for (int n = 4; n >= 0; n--){
                 System.out.print(b[n]);}
         }
-        else if (a==0){
+         if (a==0){
             System.out.println("0");
         }
 

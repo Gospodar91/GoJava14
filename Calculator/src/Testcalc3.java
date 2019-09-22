@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Testcalc3  {
     public  void Count3(int num) {
         int a;
@@ -34,7 +32,7 @@ public class Testcalc3  {
                 }
             }
         }
-        else if (a==0){
+         if (a==0){
             System.out.println("0");
         }
         for (int n = 3; n >= 0; n--){

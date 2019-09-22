@@ -1,8 +1,5 @@
-import javax.swing.text.View;
 import java.util.Scanner;
 public class Main {
-    static int i=1;
-
     public static void main(String[] args) {
         System.out.println("Введите число");
         Scanner scanner = new Scanner(System.in);
